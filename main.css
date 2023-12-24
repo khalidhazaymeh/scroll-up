@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+   
+    margin: 0;
+  }
+
+  .span-up{
+    position: fixed;
+   padding: 5px;
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    bottom: 25px;
+    right:-35px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+
+  }
+
+  .span-up.show{
+    right:20px;
+  }
+  .span-up:hover{
+    border: 2px solid blue;
+    border-radius: 50%;
+    color: wheat;
+    background-color: blue;
+  }
+  section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section:first-child {
+    background-color: #aaa;
+  }
+  section:nth-child(2) {
+    background-color: #bbb;
+  }
+  section:nth-child(3) {
+    background-color: #ccc;
+  }
+  section:last-of-type {
+    background-color: #eee;
+  }
